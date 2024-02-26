@@ -1,0 +1,85 @@
+
+Langchain for LLM application development
+
+	Open source development framework for LLM applications
+
+	Python and Javascript (typescript) packages available
+
+	Focused on composition and modularity
+
+Key value adds:
+
+	1. Modular components
+	2. Use cases: common ways to combine components
+
+Prompt templates:
+
+	Langchain allows you to use prompt templates. This is helpful because whenever you write a long system prompt, you typically want to reuse it for multiple use-cases by slightly modifying it
+
+Parsers:
+
+	LLM's output can also be parsed at ease with these parsers
+
+Memory:
+
+	To have a chatbot-like conversation, we can use memory package to speed-up our chat-bot development
+
+	LLM's are stateless, each transaction is independent. Chatbots appear to have memory by providing the full conversation as 'context'
+
+	Memory types:
+
+	1. Vector data memory
+
+	Stores text (from conversation or elsewhere) in a vector DB and retrieves the most relevant blocks of text
+
+	2. Entity memories
+
+	Using an LLM, it remembers details about specific entities
+
+	You can also use multiple memories at one time. Example: Conversation memory + entity memory to recall individuals
+
+	You can also store the conversation in a conventional DB (such as key-value store or SQL)
+
+Chains:
+
+	Using these construct we can tie several prompts together for convenience
+
+Embeddings:
+	
+	Embedding vector captures content/meaning. Text with similar content will have similar vectors
+
+	We store vector embeddings in vector database
+
+	Given a piece of document, we break it down into several chunks. Each chunk is then encoded into an embedding. We store these embeddings into a database.
+
+	Note: an input document must be broken down into several chunks because an LLM cannot have a look at the whole document in one-shot
+
+Vector Database:
+
+	Given a user query, pass it through an index of vector database, and retrieve N most similar results. These results can then be passed to LLM's. 
+
+Agents:
+
+	We need to think of LLM's as reasoning engines
+
+	Langchain has agents which allows you to build more complex worflows
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
